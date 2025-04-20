@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Corrected color code */
+            background-color: #f0f8ff;
             color: #333;
             text-align: center;
             padding: 50px;
@@ -15,10 +15,49 @@
         h1 {
             color: #2c3e50;
         }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Demo Pipeline</h1>
-    <p>This is a sample web page for our Jenkins pipeline project.</p>
+    <h1>AWS & DEVOPS Demo Pipeline</h1>
+    <h2>Hi, Hello!</h2>
+    <p>Make a deployment — put your image below:</p>
+
+    <!-- Clickable image -->
+    <a href="https://www.example.com" target="_blank">
+        <img src="https://th.bing.com/th/id/OIP.eA" alt="Deployment Image" width="300">
+    </a>
+
+    <!-- Deployment button -->
+    <div>
+        <a href="https://your-jenkins-url.com/job/demo-pipeline" class="button" target="_blank">
+            View Jenkins Pipeline
+        </a>
+    </div>
+
+    <!-- Optional build badge -->
+    <p style="margin-top: 20px;">
+        <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status Badge">
+    </p>
+
+    <footer>
+        © 2025 AWS DevOps Team. All rights reserved.
+    </footer>
 </body>
 </html>
